@@ -2,10 +2,6 @@
 
 This repository contains a beautiful, responsive personal portfolio built using **React**, **Vite**, and **TailwindCSS**. The project showcases modern web development techniques including smooth animations, responsive layouts, and interactive UI components.
 
-### Want to watch this?
-[![Check this out](https://img.youtube.com/vi/LGdPMf-SgBA/maxresdefault.jpg)](https://youtu.be/LGdPMf-SgBA)
-
-
 ## Features
 
 - **Modern Design:** Clean, SaaS-inspired design with a glass-effect navbar and sleek animations.
@@ -60,25 +56,33 @@ npm run preview
 ## Folder Structure
 
 ```
-your-portfolio/
+PORTFOLIO/
+├── node_modules/
 ├── public/
-│   └── index.html
+│   └── vite.svg
 ├── src/
+│   ├── assets/
 │   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── MobileMenu.jsx
+│   │   ├── CustomCursor.jsx
 │   │   ├── LoadingScreen.jsx
-│   │   └── sections/
-│   │       ├── Home.jsx
-│   │       ├── About.jsx
-│   │       ├── Projects.jsx
-│   │       └── Contact.jsx
-│   ├── index.css          # Tailwind base styles and global styles
+│   │   ├── MobileMenu.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── RevealOnScroll.jsx
+│   ├── sections/
+│   ├── App.css
 │   ├── App.jsx
-│   └── main.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── .env
+├── .eslintrc.cjs
+├── .gitignore
+├── icon.png
+├── index.html
+├── package-lock.json
 ├── package.json
-├── vite.config.js
-└── README.md
+├── README.md
+└── vite.config.js
+
 ```
 
 ## Customization
