@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: #0a0a0a;
+  color: #f3f4f6;
+  scroll-behavior: smooth; /* Enables smooth scrolling when clicking links */
+  cursor: auto; /* Restores default cursor */
+}
+
+/* Utility Animations */
+@layer utilities {
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+}
+
+/* ✨ Enhanced Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95); /* Adds smooth entrance effect */
+  transition:
+    opacity 1s ease-in-out,
+    transform 1s cubic-bezier(0.4, 0, 0.2, 1); /* More fluid movement */
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* 🔥 Navbar & Links Styling (Non-Transparent) */
+nav {
+  background: rgba(10, 10, 10, 0.95); /* Slightly opaque for better readability */
+  backdrop-filter: blur(10px); /* Keeps the glassmorphic effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+  color: #f3f4f6;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer; /* Show pointer cursor on nav links */
+}
+
+nav a:hover {
+  color: #38bdf8; /* A nice blue on hover */
+}
+
+/* Restore pointer cursor on interactive elements */
+a, button, nav {
+  cursor: pointer !important;
+}
+
+/* Remove custom cursor styles if not using custom cursor */
+.cursor {
+  /* You can keep this if you plan to use custom cursor again */
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.primary {
+  width: 10px;
+  height: 10px;
+  background-color: white; /* Always White */
+}
+
+.trailing {
+  width: 22px;
+  height: 22px;
+  background-color: rgba(0, 119, 255, 0.7); /* Always Blue */
+  transition: transform 0.1s ease-out;
+  opacity: 0.1;
+}
