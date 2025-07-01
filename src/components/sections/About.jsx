@@ -74,7 +74,7 @@ export const About = () => {
                   (2023-2027) 
                 </li>
                 <li>
-                  Relevant Coursework: Data Structures, Web Development, ML Projects
+                  <strong> Relevant Coursework</strong> - <br></br>Data Structures, Web Development, ML Projects
                 </li>
               </ul>
             </div>
@@ -82,12 +82,19 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> Work Experience </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Intern at Octanet(2024){" "}
-                  </h4>
+                  <h3 className="font-semibold">{" "}
+                    Intern at Octanet (2024) - {" "}
+                  </h3>
                   <p>
-                    Gained hands-on experience in building robust applications.
+                    Gained hands-on experience in Java development, including object-oriented programming, application design, and debugging practices.
+                  </p>
+                 </div>
+                <div>
+                  <h3 className="font-semibold">{" "}
+                    Intern at Repunext (2025) - {" "}
+                  </h3>
+                  <p>
+                    Acquired practical knowledge of XAMPP and PHP, focusing on web development, backend scripting, and local server configuration.
                   </p>
                 </div>
               </div>
