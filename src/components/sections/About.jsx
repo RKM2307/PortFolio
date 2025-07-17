@@ -70,7 +70,7 @@ export const About = () => {
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
                   <strong> B.Tech - Information Technology </strong> - St. Joseph's college of Engineering
-                  CGPA : 8.81
+                  CGPA : 8.91
                   (2023-2027) 
                 </li>
                 <li>
